@@ -17,4 +17,4 @@ services:
 
 ## Tags
 
-- c7o5 : Centos 7 and Libreoffice 5
+- latest : Centos 7 and Libreoffice 5
