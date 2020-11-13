@@ -1,0 +1,10 @@
+version: "3"
+services:
+  centos:
+    image: hiepnguyenvan/centos_office:latest
+    ports:
+     - "8081:9999"
+    volumes:
+     - ./docs/:/docs/
+    entrypoint: "java"
+    command: "-jar /jodconverter/jodconverter_rest.jar --server.port=9999 --jodconverter.local.port-numbers=3000,3001"
